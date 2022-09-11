@@ -11,10 +11,10 @@ export default defineConfig({
       includeAssets: ["favicon.ico", "robots.txt", "bridge-180x180.png"],
       manifest: {
         name: "Разводка мостов СПБ",
-        short_name: "Разводка мостов СПБ",
+        short_name: "Мосты СПБ",
         description: "Приложение для отслеживания времени до разводки мостов",
-        theme_color: "#222",
-        background_color: "#222",
+        theme_color: "#222222",
+        background_color: "#222222",
         icons: [
           {
             src: "bridge-192x192.png",
