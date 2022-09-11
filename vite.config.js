@@ -14,6 +14,7 @@ export default defineConfig({
         short_name: "Разводка мостов СПБ",
         description: "Приложение для отслеживания времени до разводки мостов",
         theme_color: "#222",
+        background_color: "#222",
         icons: [
           {
             src: "bridge-192x192.png",
