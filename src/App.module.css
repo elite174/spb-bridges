@@ -1,14 +1,9 @@
 .main {
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  justify-content: center;
-
   height: 100vh;
   width: min(100vw, 1000px);
 
   margin: auto;
+  padding-block-start: 1.5rem;
 }
 
 .name {
