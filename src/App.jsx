@@ -42,7 +42,7 @@ const App = () => {
       <table class={styles.table}>
         <thead>
           <tr>
-            <th>Мост1</th>
+            <th>Мост</th>
             <th>График разводки</th>
             <th>Время до разводки</th>
           </tr>
