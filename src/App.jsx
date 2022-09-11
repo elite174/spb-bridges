@@ -14,7 +14,7 @@ import {
   getClosestTimeForIntervals,
   formatTime,
 } from "./utils";
-import { timeConfig } from "./time-config";
+import { timeConfig } from "./config";
 
 import styles from "./App.module.css";
 
@@ -70,13 +70,18 @@ const App = () => {
 
               return (
                 <tr>
-                  <td
-                    classList={{
-                      [styles.opened]: !isClosed(),
-                      [styles.closed]: isClosed(),
-                    }}
-                  >
-                    {item.name}
+                  <td>
+                    <a
+                      class={styles.name}
+                      classList={{
+                        [styles.opened]: !isClosed(),
+                        [styles.closed]: isClosed(),
+                      }}
+                      href={item.link}
+                      target="_blank"
+                    >
+                      {item.name}
+                    </a>
                   </td>
                   <td class={styles.time}>{getTimeString(item.closed)}</td>
                   <td>

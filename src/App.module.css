@@ -11,6 +11,10 @@
   margin: auto;
 }
 
+.name {
+  text-decoration: none;
+}
+
 .header,
 .currentTime {
   text-align: center;
