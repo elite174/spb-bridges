@@ -12,7 +12,7 @@ export default defineConfig({
       includeAssets: [
         "favicon.ico",
         "robots.txt",
-        "apple-touch-icon.png",
+        "bridge-180x180.png",
       ],
       manifest: {
         name: "Разводка мостов СПБ",
@@ -21,17 +21,17 @@ export default defineConfig({
         theme_color: "#222",
         icons: [
           {
-            src: "assets/bridge-192x192.png",
+            src: "public/bridge-192x192.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "assets/bridge-512x512.png",
+            src: "public/bridge-512x512.png",
             sizes: "512x512",
             type: "image/png",
           },
           {
-            src: "assets/bridge-512x512.png",
+            src: "public/bridge-512x512.png",
             sizes: "512x512",
             type: "image/png",
             purpose: "any maskable",
