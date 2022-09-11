@@ -1,5 +1,13 @@
 .main {
-  width: min(90vw, 1000px);
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  width: min(100vw, 1000px);
+
   margin: auto;
 }
 
@@ -11,7 +19,7 @@
 .currentTime {
   font-size: larger;
 
-  margin: 2rem;
+  margin-block: 2rem;
 }
 
 .table {
@@ -49,4 +57,10 @@ th {
 
 .time {
   color: #aaa;
+}
+
+@media (max-width: 480px) {
+  .table {
+    font-size: 0.8rem;
+  }
 }

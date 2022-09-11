@@ -1,6 +1,6 @@
 body {
-  --color-open: hsl(121, 63%, 47%);
-  --color-closed: hsl(0, 63%, 47%);
+  --color-open: hsl(121, 62%, 57%);
+  --color-closed: hsl(0, 62%, 57%);
   --color-background: #222;
   --color-text: #eee;
 
@@ -15,6 +15,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-p {
+p, h1 {
   margin: 0;
 }

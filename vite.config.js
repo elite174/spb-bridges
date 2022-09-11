@@ -5,9 +5,6 @@ import { VitePWA } from "vite-plugin-pwa";
 export default defineConfig({
   plugins: [
     VitePWA({
-      devOptions: {
-        enabled: true,
-      },
       includeAssets: ["favicon.ico", "robots.txt", "bridge-180x180.png"],
       manifest: {
         name: "Разводка мостов СПБ",
@@ -31,7 +28,7 @@ export default defineConfig({
             src: "bridge-512x512.png",
             sizes: "512x512",
             type: "image/png",
-            purpose: "any maskable"
+            purpose: "any maskable",
           },
         ],
       },
