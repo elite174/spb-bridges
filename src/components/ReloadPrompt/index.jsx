@@ -40,7 +40,7 @@ export const ReloadPrompt = () => {
               class={styles.button}
               onClick={() => updateServiceWorker(true)}
             >
-              Обновить
+              Установить
             </button>
           </Show>
           <button class={styles.button} onClick={() => close()}>
