@@ -18,22 +18,14 @@ import { timeConfig } from "./time-config";
 
 import styles from "./App.module.css";
 
-const testDate = new Date("20 December 2019 02:09:55");
-
 const App = () => {
-  const [currentTime, setCurrentTime] = createSignal(testDate);
+  const [currentTime, setCurrentTime] = createSignal(new Date());
 
   const currentHours = createMemo(() => currentTime().getHours());
   const currentMinutes = createMemo(() => currentTime().getMinutes());
 
   createEffect(() => {
-    const timer = setInterval(
-      () =>
-        setCurrentTime(
-          (date) => new Date(date.setSeconds(date.getSeconds() + 1))
-        ),
-      1000
-    );
+    const timer = setInterval(() => setCurrentTime(new Date()), 1000);
 
     onCleanup(() => clearInterval(timer));
   });
