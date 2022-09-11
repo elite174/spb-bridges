@@ -31,7 +31,7 @@ export const ReloadPrompt = () => {
             fallback={"Доступно обновление, установить?"}
             when={offlineReady()}
           >
-            Приложение установлено
+            Приложение готово работать в offline
           </Show>
         </p>
         <div class={styles.row}>
