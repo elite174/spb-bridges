@@ -1,6 +1,5 @@
 .main {
-  height: 100vh;
-  width: min(100vw, 1000px);
+  width: min(90vw, 1000px);
 
   margin: auto;
   padding-block-start: 1.5rem;
@@ -8,6 +7,10 @@
 
 .name {
   text-decoration: none;
+}
+
+.header {
+  padding-inline: 0.5rem;
 }
 
 .header,
@@ -18,7 +21,7 @@
 .currentTime {
   font-size: larger;
 
-  margin-block: 2rem;
+  margin-block: 1.5rem;
 }
 
 .table {
@@ -38,7 +41,23 @@ thead {
 
 td,
 th {
-  padding: 0.5rem 0;
+  height: 3rem;
+}
+
+th:first-child {
+  border-top-left-radius: 12px;
+}
+
+th:last-child {
+  border-top-right-radius: 12px;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
 }
 
 .opened {
