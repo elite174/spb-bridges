@@ -15,6 +15,7 @@ export default defineConfig({
         description: "Приложение для отслеживания времени до разводки мостов",
         theme_color: "#222222",
         background_color: "#222222",
+        display: "standalone",
         icons: [
           {
             src: "bridge-192x192.png",
@@ -25,6 +26,12 @@ export default defineConfig({
             src: "bridge-512x512.png",
             sizes: "512x512",
             type: "image/png",
+          },
+          {
+            src: "bridge-512x512.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "any maskable"
           },
         ],
       },

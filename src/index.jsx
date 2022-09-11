@@ -1,8 +1,22 @@
 /* @refresh reload */
-import { render } from 'solid-js/web';
+import { render } from "solid-js/web";
+import { registerSW } from "virtual:pwa-register";
 
-import App from './App';
+import App from "./App";
 
-import './index.css';
+import "./index.css";
 
-render(() => <App />, document.getElementById('root'));
+// Check for updates of SW every hour;
+const intervalMS = 60 * 60 * 1000;
+
+registerSW({
+  onRegistered(registration) {
+    if (!registration) return;
+
+    setInterval(() => {
+      registration.update();
+    }, intervalMS);
+  },
+});
+
+render(() => <App />, document.getElementById("root"));
